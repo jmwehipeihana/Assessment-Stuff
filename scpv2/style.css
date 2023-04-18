@@ -1,0 +1,176 @@
+a {
+    text-decoration: none;
+    color: rgb(61, 146, 201);
+}
+
+h3 {
+    font-weight: 100;
+}
+
+#layout {
+    padding: 0;
+}
+/* Set default font family and size for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #56a9b8;
+  }
+  
+  /* Add some margin and padding to the container */
+  .container-fluid {
+    margin-top: 20px;
+    padding: 0 15px;
+  }
+  
+  /* Style the sidebar */
+  .sidebar {
+    background: rgb(61, 79, 93);
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Style the header of the sidebar */
+  .header {
+    margin-bottom: 20px;
+    text-align: center;
+    top: auto;
+    margin: 3em auto;
+  }
+  
+  /* Style the title and tagline of the sidebar */
+  .title {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  
+  .tagline {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  
+  /* Style the navigation links in the sidebar */
+  .nav-list {
+    margin-top: 20px;
+    margin: 120px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav-item {
+    list-style: none;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+  }
+  
+  .nav-item a {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    background: transparent;
+    border: 2px solid rgb(176, 202, 219);
+    color: #fff;
+    margin-top: 1em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 85%;
+    text-decoration: none;
+  }
+  
+  .nav-item a:hover,
+  .nav-item a:focus {
+      border: 2px solid rgb(61, 146, 201);
+      text-decoration: none;
+  }
+  
+  /* Style the content area */
+  .content {
+    padding: 2em 1em 0;
+    
+  }
+  
+  /* Style the post section */
+  .post {
+    margin-top: 20px;
+    padding-bottom: 2em;
+  }
+  
+  /* Style the post header */
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .post-header img {
+    max-width: 200px;
+    margin-right: 20px;
+  }
+  
+  .post-title {
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 0.2em;
+    margin: 0;
+  }
+  
+  /* Style the description text */
+  .text-description {
+    margin-top: 20px;
+  }
+  
+  #root {
+    display: none;
+  }
+  
+  #read-description-button {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #read-description-button:hover {
+    background-color: #555;
+    color: #fff;
+  }
+
+  #read-Containment-button {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #read-Containment-button:hover {
+    background-color: #555;
+    color: #fff;
+    }
+  
+  .post-avatar {
+    border-radius: 50px;
+    float: right;
+    margin-left: 1em;
+}
+.text-description {
+    font-family: 'Montserrat', sans-serif;
+    color: #050404;
+    line-height: 1.8em;
+    font-size: 14px;
+    font-weight: 100;
+
+}
+
+.post-category {
+    margin: 0 0.1em;
+    padding: 0.3em 1em;
+    color: #fff;
+    background: #999;
+    font-size: 80%;
+}

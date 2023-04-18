@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+            <title>SCP-005 - SCP Foundation</title>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-lg-3 sidebar">
+                    <div class="header">
+                        <img alt="SCP Motherboard" class="img-fluid" src="images/SCP_Archives_logo.png">
+                        <h1 class="title"><b>Item#: </b>SCP-005</h1>
+                        <h2 class="tagline"><b>Object Class: </b>Euclid</h2>
+                        <nav class="nav">
+                            <ul class="nav-list">
+                                <li class="nav-item">
+                                    <a class="SCP-002" href="scp-002.html">SCP-002</a>
+                                    <a class="SCP-003" href="scp-003.html">SCP-003</a>
+                                    <a class="SCP-004" href="scp-004.html">SCP-004</a>
+                                    <a class="SCP-006" href="scp-006.html">SCP-006</a>
+                                    <a class="index.html" href="index.html">Home</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="col-md-8 col-lg-9 content">
+                    <div class="posts">
+                        <h1 class="content-subhead">SCP Foundation</h1>
+                        <button><a href="https://www.youtube.com/watch?v=b9XMyKK60pQ&ab_channel=SCPOrientation" target="_blank">Watch video</a></button>
+                        <section class="post">
+                            <header class="post-header">
+                                <img alt="SCP-005" class="img-fluid" src="images/SCP-005.jpg">
+                                <h2 class="post-title">Description: <button id="read-description-button">Read Description/Stop</button></h2>
+                            </header>
+                            <div class="text-description">
+                                <div id="scp005"></div>
+                                <button id="read-containment-button">Read containment Procedures/Stop</button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                        <script src="data.js"></script>
+                        <script>
+                            loadSCPData(displaySCP005);
+                            
+                            function displaySCP005(scpData) {
+                                const scp005 = scpData["SCP-005"];
+                                const scp005HTML = `
+                                    <h2>${scp005.subject}</h2>
+                                    <p><strong>Class:</strong> ${scp005.class}</p>
+                                    <p><strong>Description:</strong> ${scp005.description}</p>
+                                    <p><strong>Special Containment Procedures:</strong> ${scp005.Containment}</p>
+                                `;
+                                document.getElementById("scp005").innerHTML = scp005HTML;
+                            }
+                        </script>
+            </div>
+        </div>
+    </body>
+</html>
