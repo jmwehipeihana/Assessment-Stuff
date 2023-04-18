@@ -1,4 +1,4 @@
-// Define a function to load the SCP data
+
 function loadSCPData(callback) {
   const xhr = new XMLHttpRequest();
   xhr.overrideMimeType("application/json");
@@ -23,7 +23,7 @@ function displaySCP(scpData, scpNumber) {
   document.getElementById(`scp${scpNumber}`).innerHTML = scpHTML;
 }
 
-// Check if Speech Synthesis API is supported
+
 if ('speechSynthesis' in window) {
   console.log('Speech Synthesis API is supported.');
 } else {
